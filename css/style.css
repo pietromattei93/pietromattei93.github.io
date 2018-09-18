@@ -1,0 +1,224 @@
+/* disable scrolling */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+/*Particles - inspired from: https://codepen.io/nashvail/pen/wpGgXO */
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+
+
+
+/* regular css */
+
+html {
+    background-color: black;
+}
+
+article {
+    padding: 1% 7% 3% 7%;
+}
+
+h1 {
+    color: darkorange;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8em;
+    /*reset margin*/
+    margin: 0;
+    background: linear-gradient(orange 25%, red 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: slategray;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    /*reset margin*/
+}
+
+p {
+    padding-bottom: 1em;
+    color: slategray;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    /*reset margin*/
+}
+
+i {
+    color: slategray;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    /*reset margin*/
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 8em;
+    padding: 20px;
+}
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+}
+
+a:hover {
+    color: #337ab7;
+}
+
+a:hover i {
+    color: #337ab7;
+}
+
+
+#home a:hover i {
+    color: darkorange;
+}
+
+
+/* classes */
+
+.text-center {
+    text-align: center;
+}
+
+
+.imglink {
+    display: inline-block;
+}
+
+/* Button styling */
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* Scrolling text style*/
+
+.wrapper {
+    width: 500px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.roles {
+    font-size: 30px;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.roles div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#work p {
+    color: #e67e22;
+}
+
+#night p {
+    color: #9b59b6;
+}
+
+#free p {
+    color: #2980b9;
+}
+
+#love p {
+    color: #e74c3c;
+}
+
+/* responsive */
+
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 10vw;
+    }
+    #contact article li {
+        display: inline-block;
+    }
+    .left {
+        display: block;
+        width: 100%;
+    }
+    .right {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 8vw;
+    }
+    li {
+        display: list-item;
+    }
+    #contact article li {
+        display: inline-block;
+    }
+    .left {
+        display: block;
+        width: 100%;
+    }
+    .right {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+min-width: 480px (because the original iphones in landscape were this size) min-width: 768px (because ipads and most tablets are this size in portrait) min-width: 1024px (because ipads in landscape are this size) min-width: 1280px (because the average desktop screen is this size or bigger)
